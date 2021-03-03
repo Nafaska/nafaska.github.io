@@ -1,5 +1,5 @@
-.description {
-  background-color: #c2bfb5;
+.projects {
+  background-color: #8CACD3;
   font-size: larger;
   color: white;
   width: 100vw;
@@ -7,9 +7,4 @@
   font-family: "Courier New";
   box-sizing: border-box;
   height: 100vh;
-}
-
-.description div {
-  display: flex;
-  flex-direction: column;
 }

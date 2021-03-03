@@ -1,18 +1,17 @@
 import "./Description.css";
-import ArrowDownButton from "../helpers/arrowDownButton/ArrowDownButton";
+import React from "react";
 
-const Description = () => {
-  return (
-    <div className="description">
+const Description = React.forwardRef((props, ref) => {
+return (
+    <div className="description" ref={ref}>
       {/* <p>JavaScript | React | Node 🚀</p> */}
       <div>
         Always curious & learning 📚 <b />
         Enjoy cooking 🧑‍🍳 traveling ✈️ cats 🐈 <b />
         #WomenWhoCode 💻 <b />
       </div>
-      <ArrowDownButton />
     </div>
   );
-};
+})
 
 export default Description;

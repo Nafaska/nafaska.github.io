@@ -1,8 +1,9 @@
-import "./Header.css";
+import React from "react";
+import "./Title.css";
 
-const Header = () => {
+const Title = React.forwardRef((props, ref) => {
   return (
-    <header className="header">
+    <div className="title" ref={ref}>
       <div class="perspective-text">
         <div class="perspective-line">
           <p></p>
@@ -29,8 +30,8 @@ const Header = () => {
           <p></p>
         </div>
       </div>
-    </header>
+    </div>
   );
-};
+});
 
-export default Header;
+export default Title;
