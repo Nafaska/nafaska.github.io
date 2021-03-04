@@ -1,11 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
+import Matster from "../../assets/matster.png";
+import Taskster from "../../assets/taskster.png";
+import Chatter from "../../assets/chatter.png";
+import SimpleImageSlider from "react-simple-image-slider";
+
+const images = [{ url: Chatter }, { url: Matster }, { url: Taskster }];
 
 const Projects = React.forwardRef((props, ref) => {
+  const [currentImageURL, setCurrentImageURL] = useState(
+    "https://github.com/Nafaska/chatter"
+  );
+
+  const processOnStartSlide = (idx) => {
+    switch (idx) {
+      case 1:
+        setCurrentImageURL("https://github.com/Nafaska/chatter");
+        break;
+      case 2:
+        setCurrentImageURL("https://github.com/Nafaska/matster-online-shop");
+        break;
+      case 3:
+        setCurrentImageURL("https://github.com/Nafaska/taskster");
+        break;
+      default:
+        setCurrentImageURL("https://github.com/Nafaska/chatter");
+        break;
+    }
+  };
 
   return (
     <div className="projects" ref={ref}>
-      Here is my projects
+      <SimpleImageSlider
+        width={"75vmin"}
+        height={"75vmin"}
+        images={images}
+        navStyle={2}
+        showNavs={true}
+        onStartSlide={processOnStartSlide}
+      />
+      <a
+        className="goToProjectBtn"
+        href={currentImageURL}
+      >
+        Go to Source: {currentImageURL}
+      </a>
     </div>
   );
 });
