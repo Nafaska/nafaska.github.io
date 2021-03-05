@@ -1,17 +1,18 @@
 import "./Description.css";
 import React from "react";
+import ProfessionalCompetence from "./ProfessionalCompetence";
 
 const Description = React.forwardRef((props, ref) => {
-return (
+  return (
     <div className="description" ref={ref}>
-      {/* <p>JavaScript | React | Node 🚀</p> */}
-      <div>
+      <div className="text">
         Always curious & learning 📚 <b />
         Enjoy cooking 🧑‍🍳 traveling ✈️ cats 🐈 <b />
         #WomenWhoCode 💻 <b />
       </div>
+      <ProfessionalCompetence />
     </div>
   );
-})
+});
 
 export default Description;

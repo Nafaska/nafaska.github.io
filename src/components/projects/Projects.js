@@ -32,8 +32,8 @@ const Projects = React.forwardRef((props, ref) => {
   return (
     <div className="projects" ref={ref}>
       <SimpleImageSlider
-        width={"75vmin"}
-        height={"75vmin"}
+        width={"70vmin"}
+        height={"70vmin"}
         images={images}
         navStyle={2}
         showNavs={true}
