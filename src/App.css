@@ -3,6 +3,7 @@
   font-family: "Courier New", "Monaco", monospace;
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
   /* height: 100%; */
 }
 

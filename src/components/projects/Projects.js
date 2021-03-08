@@ -42,6 +42,8 @@ const Projects = React.forwardRef((props, ref) => {
       <a
         className="goToProjectBtn"
         href={currentImageURL}
+        target="_blank"
+        rel="noreferrer"
       >
         Go to Source: {currentImageURL}
       </a>

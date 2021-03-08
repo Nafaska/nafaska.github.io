@@ -1,0 +1,80 @@
+#sendEmailForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55vmin;
+  margin-top: 2vmin;
+}
+
+input,
+textarea {
+  border: none;
+  background: inherit;
+  border-bottom: groove;
+  margin-bottom: 2vmin;
+  color: white;
+  outline: none;
+  font-family: "Courier New";
+  width: 100%;
+}
+
+/* textarea {
+  height: 12vmin;
+} */
+
+::placeholder {
+  color: white;
+  opacity: 60%;
+  font-family: "Courier New";
+  font-size: medium;
+}
+
+#sendEmailForm button {
+  background: #5f8dc5;
+  font-weight: normal;
+  color: white;
+  cursor: pointer;
+  padding: 2vmin;
+  border-radius: 8px;
+  font-size: medium;
+  align-self: flex-start;
+}
+
+#sendEmailForm button:hover {
+  font-weight: 900;
+}
+
+#sendEmailForm button:disabled {
+  background: #8cacd3;
+}
+
+.errorMessage,
+.successMessage {
+  color: #fbb9c5;
+  font-size: small;
+  font-weight: bold;
+  margin-top: -1vmin;
+  margin-bottom: 1vmin;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.successMessage {
+  color: #9affe7;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill::first-line,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill::first-line {
+  -webkit-box-shadow: 0 0 0 30px #939597 inset !important;
+  box-shadow: 0 0 0 30px #939597 inset !important;
+  -webkit-text-fill-color: white !important;
+  font-family: "Courier New" !important;
+  caret-color: white !important;
+}

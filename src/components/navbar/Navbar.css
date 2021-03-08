@@ -18,6 +18,8 @@ button {
   font-weight: bold;
   color: white;
   text-align: left;
+  outline: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 942px) {
