@@ -20,12 +20,12 @@
 
 .projects div div button img {
   background-color: #939597;
-  opacity: 60%;
+  opacity: 0.6;
   border-radius: 50%;
 }
 
 .projects div div button img:hover {
-  opacity: 90%;
+  opacity: 0.9;
 }
 
 .goToProjectBtn {
