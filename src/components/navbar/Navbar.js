@@ -21,7 +21,7 @@ const Navbar = ({
         Description
       </button>
       <button onClick={() => scrollTo(projectsSectionRef)}>Projects</button>
-      <button onClick={() => scrollTo(resumeSectionRef)}>Resume</button>
+      <button onClick={() => scrollTo(resumeSectionRef)}>CV</button>
       <button onClick={() => scrollTo(contactsSectionRef)}>Contacts</button>
     </header>
   );

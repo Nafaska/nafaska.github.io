@@ -1,5 +1,5 @@
 .resume {
-  background-color: #F0A1BF;
+  background-color: #f0a1bf;
   font-size: larger;
   color: white;
   width: 100vw;
@@ -7,4 +7,19 @@
   font-family: "Courier New";
   box-sizing: border-box;
   height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+}
+
+.resume a {
+  padding-top: 4vmin;
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+}
+
+.resume a:hover {
+  padding-top: 4vmin;
+  transform: scale(1.3);
 }
