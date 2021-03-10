@@ -1,0 +1,60 @@
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#menu_checkbox {
+  display: none;
+}
+
+label {
+  margin: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s ease transform;
+  cursor: pointer;
+}
+
+label div {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  margin-left: 0;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
+    0.3s ease background-color;
+}
+
+label div:first-child {
+  width: 22px;
+}
+
+label div:nth-child(2) {
+  width: 15px;
+}
+
+label div:last-child {
+  width: 30px;
+  margin-bottom: 0;
+}
+
+#menu_checkbox:checked + label {
+  transform: rotateZ(-90deg);
+}
+
+#menu_checkbox:checked + label div {
+  width: 6px;
+  margin-left: 12px;
+  margin-bottom: 3px;
+  background-color: #f5df4d;
+}
+
+@media only screen and (min-width: 710px) {
+  .burger-menu {
+    display: none;
+  }
+}

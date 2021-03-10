@@ -21,3 +21,10 @@
 .socialMedia a {
   padding-right: 1vmin;
 }
+
+@media only screen and (max-height: 568px) {
+  .contacts {
+    font-size: smaller !important;
+    padding-top: 20vh;
+  }
+}

@@ -3,6 +3,7 @@ import "./Projects.css";
 import Matster from "../../assets/matster.png";
 import Taskster from "../../assets/taskster.png";
 import Chatter from "../../assets/chatter.png";
+import { ReactComponent as GithubLogo } from "../../assets/github.svg";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [{ url: Chatter }, { url: Matster }, { url: Taskster }];
@@ -31,6 +32,15 @@ const Projects = React.forwardRef((props, ref) => {
 
   return (
     <div className="projects" ref={ref}>
+      <a
+        className="goToProjectBtn"
+        href={currentImageURL}
+        target="_blank"
+        rel="noreferrer"
+        alt="Go To Sourse"
+      >
+        <GithubLogo />
+      </a>
       <SimpleImageSlider
         width={"70vmin"}
         height={"70vmin"}
@@ -39,14 +49,6 @@ const Projects = React.forwardRef((props, ref) => {
         showNavs={true}
         onStartSlide={processOnStartSlide}
       />
-      <a
-        className="goToProjectBtn"
-        href={currentImageURL}
-        target="_blank"
-        rel="noreferrer"
-      >
-        Go to Source: {currentImageURL}
-      </a>
     </div>
   );
 });

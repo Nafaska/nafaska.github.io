@@ -3,11 +3,18 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 2vh;
   box-sizing: border-box;
   left: 0;
   z-index: 20;
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+.navbar div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 button {
@@ -20,6 +27,7 @@ button {
   text-align: left;
   outline: none;
   cursor: pointer;
+  padding-left: 0;
 }
 
 @media only screen and (max-width: 942px) {

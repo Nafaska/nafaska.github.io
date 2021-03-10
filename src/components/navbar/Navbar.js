@@ -1,4 +1,6 @@
+import BurgerButton from "./BurgerButton";
 import "./Navbar.css";
+import { useState } from "react";
 
 const Navbar = ({
   headerSectionRef,
@@ -13,16 +15,26 @@ const Navbar = ({
       behavior: "smooth",
     });
   };
+  const [isChecked, setIsChecked] = useState(false);
+
+  const onButtonClick = () => {
+    setIsChecked(!isChecked);
+  };
 
   return (
     <header className="navbar">
-      <button onClick={() => scrollTo(headerSectionRef)}>Main</button>
-      <button onClick={() => scrollTo(descriptionSectionRef)}>
-        Description
-      </button>
-      <button onClick={() => scrollTo(projectsSectionRef)}>Projects</button>
-      <button onClick={() => scrollTo(resumeSectionRef)}>CV</button>
-      <button onClick={() => scrollTo(contactsSectionRef)}>Contacts</button>
+      <BurgerButton onButtonClick={onButtonClick} isChecked={isChecked} />
+      {isChecked ? (
+        <div>
+          <button onClick={() => scrollTo(headerSectionRef)}>Main</button>
+          <button onClick={() => scrollTo(descriptionSectionRef)}>
+            Description
+          </button>
+          <button onClick={() => scrollTo(projectsSectionRef)}>Projects</button>
+          <button onClick={() => scrollTo(resumeSectionRef)}>CV</button>
+          <button onClick={() => scrollTo(contactsSectionRef)}>Contacts</button>
+        </div>
+      ) : null}
     </header>
   );
 };

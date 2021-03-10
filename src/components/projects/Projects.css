@@ -36,17 +36,40 @@
   text-overflow: ellipsis;
 }
 
-a:link {
-  color: white;
-  text-decoration: none;
+.projects a:link {
+  position: absolute;
+  opacity: 0.4;
+  z-index: 20;
+  width: auto;
+  padding: 15vmin;
 }
 
-a:visited {
-  color: white;
-  text-decoration: none;
+.projects svg {
+  height: 48px;
+  width: 48px;
+  transition: all 0.1s ease-out;
 }
 
-a:hover {
-  text-decoration: none;
-  font-weight: 900;
+.projects a:hover {
+  opacity: 1;
+}
+
+.projects a:hover svg {
+  height: 72px;
+  width: 72px;
+}
+
+@media only screen and (max-width: 500px) {
+  .projects a:link {
+    position: relative;
+    z-index: 20;
+    width: auto;
+    padding: 3vmin;
+    opacity: 1;
+  }
+  .projects a:hover svg {
+    height: 48px;
+    width: 48px;
+    fill: #F0F0F0;
+  }
 }
