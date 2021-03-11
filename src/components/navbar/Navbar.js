@@ -28,7 +28,7 @@ const Navbar = ({
         <div>
           <button onClick={() => scrollTo(headerSectionRef)}>Main</button>
           <button onClick={() => scrollTo(descriptionSectionRef)}>
-            Description
+            Profile
           </button>
           <button onClick={() => scrollTo(projectsSectionRef)}>Projects</button>
           <button onClick={() => scrollTo(resumeSectionRef)}>CV</button>

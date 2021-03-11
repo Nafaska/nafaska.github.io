@@ -4,9 +4,9 @@ import a11yDark from "react-syntax-highlighter/dist/cjs/styles/prism/a11y-dark";
 
 const ProfessionalCompetence = () => {
   SyntaxHighlighter.registerLanguage("jsx", jsx);
-  const codeString = `const Description = () => {
+  const codeString = `const Profile = () => {
   return (
-    <div>
+    <div id="Viktoriia-Kovalenko">
       <h3>
         Always curious & learning 📚 <br />
         Enjoy cooking 🧑‍🍳 traveling ✈️ cats 🐈 <br />
@@ -19,8 +19,7 @@ const ProfessionalCompetence = () => {
         <li>Git</li>
         <li>MongoDB/Mongoose</li>
         <li>Heroku</li>
-        <li>Jest</li>
-        <li>Cypress</li>
+        <li>Jest/Cypress</li>
       </ul>
     </div>
   )

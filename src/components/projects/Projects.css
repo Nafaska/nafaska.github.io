@@ -70,6 +70,10 @@
   .projects a:hover svg {
     height: 48px;
     width: 48px;
-    fill: #F0F0F0;
+    fill: #f0f0f0;
+  }
+  .projects div {
+    width: 90vmin !important;
+    height: 90vmin !important;
   }
 }
