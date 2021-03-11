@@ -1,13 +1,11 @@
 
-# `My Portfolio`
+# `My Portfolio - Viktoriia Kovalenko`
 
 <img src="./public/apple-touch-icon.png" title="Logo">
 
 ## Deployed on GitHub Pages: https://nafaska.github.io.
 
 Hello I’m Viktoriia Kovalenko, and this is my portfolio as a FullStack JavaScript Developer.
-
-Deployment to GitHub Pages is triggered each time a new commit is pushed to the main branch.
 
 ## Technologies and libraries used:
  * [React](https://reactjs.org)
