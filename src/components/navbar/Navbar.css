@@ -8,7 +8,6 @@
   box-sizing: border-box;
   left: 0;
   z-index: 20;
-  filter: drop-shadow(0px 0px 1px black);
 }
 
 .navbar div {
@@ -27,7 +26,20 @@ button {
   text-align: left;
   outline: none;
   cursor: pointer;
-  padding-left: 0;
+  background-image: linear-gradient(to right, #f5df4d 0, #f5df4d00 100%);
+  background-position: 0 -0.1em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.navbar button span {
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+button:hover {
+  background-size: 100% 100%;
+  filter: none;
 }
 
 @media only screen and (max-width: 942px) {

@@ -21,18 +21,39 @@ const Navbar = ({
     setIsChecked(!isChecked);
   };
 
+  const NAVBAR_TARGETS = {
+    headerNavButton: headerSectionRef,
+    profileNavButton: descriptionSectionRef,
+    projectsNavButton: projectsSectionRef,
+    cvNavButton: resumeSectionRef,
+    contactsNavButton: contactsSectionRef,
+  };
+
+  const onNavButtonClick = (e) => {
+    const id = e.currentTarget.id;
+    scrollTo(NAVBAR_TARGETS[id]);
+  };
+
   return (
     <header className="navbar">
       <BurgerButton onButtonClick={onButtonClick} isChecked={isChecked} />
       {isChecked ? (
         <div>
-          <button onClick={() => scrollTo(headerSectionRef)}>Main</button>
-          <button onClick={() => scrollTo(descriptionSectionRef)}>
-            Profile
+          <button id="headerNavButton" onClick={onNavButtonClick}>
+            <span>Main</span>
           </button>
-          <button onClick={() => scrollTo(projectsSectionRef)}>Projects</button>
-          <button onClick={() => scrollTo(resumeSectionRef)}>CV</button>
-          <button onClick={() => scrollTo(contactsSectionRef)}>Contacts</button>
+          <button id="profileNavButton" onClick={onNavButtonClick}>
+            <span>Profile</span>
+          </button>
+          <button id="projectsNavButton" onClick={onNavButtonClick}>
+            <span>Projects</span>
+          </button>
+          <button id="cvNavButton" onClick={onNavButtonClick}>
+            <span>CV</span>
+          </button>
+          <button id="contactsNavButton" onClick={onNavButtonClick}>
+            <span>Contacts</span>
+          </button>
         </div>
       ) : null}
     </header>
