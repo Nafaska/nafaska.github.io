@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.87298498.chunk.css",
-    "main.js": "/static/js/main.a8ad19ee.chunk.js",
-    "main.js.map": "/static/js/main.a8ad19ee.chunk.js.map",
+    "main.css": "/static/css/main.70c714fc.chunk.css",
+    "main.js": "/static/js/main.6cab8f94.chunk.js",
+    "main.js.map": "/static/js/main.6cab8f94.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.582f54a3.js",
     "runtime-main.js.map": "/static/js/runtime-main.582f54a3.js.map",
     "static/js/2.3f4704c4.chunk.js": "/static/js/2.3f4704c4.chunk.js",
     "static/js/2.3f4704c4.chunk.js.map": "/static/js/2.3f4704c4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.87298498.chunk.css.map": "/static/css/main.87298498.chunk.css.map",
+    "static/css/main.70c714fc.chunk.css.map": "/static/css/main.70c714fc.chunk.css.map",
     "static/js/2.3f4704c4.chunk.js.LICENSE.txt": "/static/js/2.3f4704c4.chunk.js.LICENSE.txt",
     "static/media/chatter.196ba20c.png": "/static/media/chatter.196ba20c.png",
     "static/media/downloadPdf.f4f5abe6.svg": "/static/media/downloadPdf.f4f5abe6.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.582f54a3.js",
     "static/js/2.3f4704c4.chunk.js",
-    "static/css/main.87298498.chunk.css",
-    "static/js/main.a8ad19ee.chunk.js"
+    "static/css/main.70c714fc.chunk.css",
+    "static/js/main.6cab8f94.chunk.js"
   ]
 }
