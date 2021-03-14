@@ -16,8 +16,14 @@ function App() {
   const resumeSectionRef = useRef(null);
   const contactsSectionRef = useRef(null);
 
+  console.log(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+
   useEffect(() => {
+    console.log(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
     ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+    ReactGA.initialize({
+      trackingId: process.env.REACT_APP_GOOGLE_ANALYTICS_ID,
+    });
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
