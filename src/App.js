@@ -17,6 +17,7 @@ function App() {
   const contactsSectionRef = useRef(null);
 
   console.log(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+  console.log(process.env.REACT_APP_TEMPLATE_ID);
 
   useEffect(() => {
     console.log(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
