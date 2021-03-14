@@ -1,11 +1,12 @@
 import "./App.css";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Title from "./components/title/Title";
 import Description from "./components/description/Description";
 import Projects from "./components/projects/Projects";
 import Navbar from "./components/navbar/Navbar";
 import Contacts from "./components/contacts/Contacts";
 import Resume from "./components/resume/Resume";
+import ReactGA from "react-ga";
 require("dotenv").config();
 
 function App() {
@@ -14,6 +15,11 @@ function App() {
   const projectsSectionRef = useRef(null);
   const resumeSectionRef = useRef(null);
   const contactsSectionRef = useRef(null);
+
+  useEffect(() => {
+    ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div className="App">
