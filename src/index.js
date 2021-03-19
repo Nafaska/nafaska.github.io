@@ -6,7 +6,6 @@ import GA4React from "ga-4-react";
 
 const ga4react = new GA4React(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
 
-
 (async () => {
   await ga4react.initialize();
   ReactDOM.render(

@@ -32,23 +32,25 @@ const Projects = React.forwardRef((props, ref) => {
 
   return (
     <div className="projects" ref={ref}>
-      <a
-        className="goToProjectBtn"
-        href={currentImageURL}
-        target="_blank"
-        rel="noreferrer"
-        alt="Go To Sourse"
-      >
-        <GithubLogo />
-      </a>
-      <SimpleImageSlider
-        width={"70vmin"}
-        height={"70vmin"}
-        images={images}
-        navStyle={2}
-        showNavs={true}
-        onStartSlide={processOnStartSlide}
-      />
+      <div className="goToProjectContainer">
+        <a
+          className="goToProjectBtn"
+          href={currentImageURL}
+          target="_blank"
+          rel="noreferrer"
+          alt="Go To Source"
+        >
+          <GithubLogo />
+        </a>
+      </div>
+        <SimpleImageSlider
+          width={"70vmin"}
+          height={"70vmin"}
+          images={images}
+          navStyle={2}
+          showNavs={true}
+          onStartSlide={processOnStartSlide}
+        />
     </div>
   );
 });

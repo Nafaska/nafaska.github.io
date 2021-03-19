@@ -29,11 +29,18 @@
 }
 
 .goToProjectBtn {
-  padding: 2vh;
-  width: 75vmin;
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.goToProjectContainer {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects a:link {
@@ -60,20 +67,21 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .projects a:link {
-    position: relative;
-    z-index: 20;
-    width: auto;
-    padding: 3vmin;
-    opacity: 1;
-  }
   .projects a:hover svg {
     height: 48px;
     width: 48px;
     fill: #f0f0f0;
   }
-  .projects div {
+  .projects div:not(.goToProjectContainer) {
     width: 90vmin !important;
     height: 90vmin !important;
+  }
+  .goToProjectContainer {
+    position: relative;
+    width: 48px !important;
+    height: 48px !important;
+    z-index: 20;
+    padding: 3vmin;
+    opacity: 1;
   }
 }

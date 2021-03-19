@@ -32,7 +32,7 @@ function CountactMe() {
     }
   };
 
-  const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!validateEmail(email)) {
@@ -43,11 +43,11 @@ function CountactMe() {
     }
   };
 
-    const getSuccessMessageTimeout = () => {
-      setTimeout(() => {
-        setIsSuccess(false);
-      }, 5000);
-    };
+  const getSuccessMessageTimeout = () => {
+    setTimeout(() => {
+      setIsSuccess(false);
+    }, 5000);
+  };
 
   const sendMessage = () => {
     sendForm(
@@ -67,7 +67,6 @@ function CountactMe() {
       }
     );
   };
-
   return (
     <form id="sendEmailForm">
       <input
@@ -116,7 +115,7 @@ function CountactMe() {
         variant="contained"
         color="primary"
         type="button"
-        onClick={onSubmit}
+        onClick={handleSubmit}
         disabled={validateForm()}
       >
         Send Message
