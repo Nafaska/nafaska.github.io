@@ -1,3 +1,4 @@
+import React from "react";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
 import a11yDark from "react-syntax-highlighter/dist/cjs/styles/prism/a11y-dark";

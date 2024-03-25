@@ -1,13 +1,11 @@
 import "./App.css";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import Title from "./components/title/Title";
 import Description from "./components/description/Description";
 import Projects from "./components/projects/Projects";
 import Navbar from "./components/navbar/Navbar";
 import Contacts from "./components/contacts/Contacts";
 import Resume from "./components/resume/Resume";
-
-require("dotenv").config();
 
 function App() {
   const headerSectionRef = useRef(null);

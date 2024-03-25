@@ -1,9 +1,9 @@
 import React from "react";
 import "./Contacts.css";
-import { ReactComponent as LinkedinLogo } from "../../assets/linkedin.svg";
-import { ReactComponent as GithubLogo } from "../../assets/github.svg";
-import { ReactComponent as FacebookLogo } from "../../assets/facebook.svg";
-import { ReactComponent as TwitterLogo } from "../../assets/twitter.svg";
+import LinkedinLogo from "../../assets/linkedin.svg?react";
+import GithubLogo from "../../assets/github.svg?react";
+import FacebookLogo from "../../assets/facebook.svg?react";
+import TwitterLogo from "../../assets/twitter.svg?react";
 import ContactMe from "./ContactMe";
 
 const Contacts = React.forwardRef((props, ref) => {

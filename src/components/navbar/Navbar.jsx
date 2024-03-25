@@ -1,6 +1,6 @@
 import BurgerButton from "./BurgerButton";
 import "./Navbar.css";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Navbar = ({
   headerSectionRef,

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Resume.css";
-import { ReactComponent as DownloadPDFIcon } from "../../assets/downloadPdf.svg";
+import DownloadPDFIcon from "../../assets/downloadPdf.svg?react";
 
 const Resume = React.forwardRef((props, ref) => {
   return (

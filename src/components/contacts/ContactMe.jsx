@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./ContactMe.css";
 import { init, sendForm } from "emailjs-com";
 
-function CountactMe() {
-  init(process.env.REACT_APP_USER_ID);
+function ContactMe() {
+  init(import.meta.env.REACT_APP_USER_ID);
 
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -123,4 +123,4 @@ function CountactMe() {
     </form>
   );
 }
-export default CountactMe;
+export default ContactMe;

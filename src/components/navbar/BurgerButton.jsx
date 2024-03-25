@@ -1,3 +1,4 @@
+import React from "react";
 import "./BurgerButton.css";
 
  const BurgerButton = ({ isChecked, onButtonClick }) => {

@@ -3,7 +3,7 @@ import "./Projects.css";
 import Matster from "../../assets/matster.png";
 import Taskster from "../../assets/taskster.png";
 import Chatter from "../../assets/chatter.png";
-import { ReactComponent as GithubLogo } from "../../assets/github.svg";
+import GithubLogo from "../../assets/github.svg?react";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [{ url: Chatter }, { url: Matster }, { url: Taskster }];
@@ -40,7 +40,7 @@ const Projects = React.forwardRef((props, ref) => {
           rel="noreferrer"
           alt="Go To Source"
         >
-          <GithubLogo />
+          {/*< />*/}
         </a>
       </div>
         <SimpleImageSlider
